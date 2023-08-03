@@ -1,0 +1,347 @@
+<html>
+ <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+ <head>
+ <body>
+
+ <!--------------header------------------------------>
+ <header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-default" style="background-color:#CEF6F5">
+		
+				<a class="navbar-brand" href="index.html">
+					<img src="images/animone-hotel-new.png" width="150" height="100"></a>
+					<h1>Animone</h1>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="Menu.html">Menu</a></li>
+						<li class="nav-item active"><a class="nav-link" href="Reeservation.html">Reservation</a></li>
+						<li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+	
+<!----------------------------javascript-------------------------------->
+<div class="Ss-content Ss-section class="margin"  >
+  <img class="mySlides" src="images/hotel-direct-booking-strategy.jpg" style="width:100% ;height:auto" >
+  <img class="mySlides" src="images/abdulla-nahid-AmE4lt6RD3U-unsplash.jpg" style="width:100% ;height:auto">
+  <img class="mySlides" src="images/reisetopia-Vl5DAQxNBbM-unsplash (1).jpg" style="width:100% ;height:auto">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</script>
+<div class="banner text-center">
+<h1>Online Reservation</h1>
+<p>Enjoy Your Day Us</p>
+</div>
+</section> 
+</section> 
+
+
+<!--  -------------------------------------------Start about--------------------------------------------------------------------------------->
+	<div class="about-section-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="images/bookingcom.png" alt="" class="img-fluid"></p>
+					
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
+					
+						<h1> <span>Welcome Our Paradise !</span></h1>
+						<h4>Animone Hotels</h4>
+						<p>Our Hotels & Resorts remain stylish modern, forward thinking global leader of hospitality and we use innovative restuarent concepts, unique activities, nature and authentic hospitality.</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About -->
+ 
+ <!-- Start Reservation -->
+	<div class="reservation-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Reservation Table</h2>
+						<p>Come & Enjoy</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-6">
+									<h1> <span>Book a Table</span></h1>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="Date" name="Date" placeholder="Date" required data-error="Please enter your Date">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Time" id="Time" class="form-control" name="Time" required data-error="Please enter your Time">
+											<div class="help-block with-errors"></div>
+										</div>          
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<select class="custom-select d-block form-control" id="person" required data-error="Please select Person">
+											  <option disabled selected>Select Person*</option>
+											  <option value="1">1</option>
+											  <option value="2">2</option>
+											  <option value="3">3</option>
+											  <option value="4">4</option>
+											  <option value="5">5</option>
+											  <option value="6">6</option>
+											  <option value="7">7</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h1><span>Contact Details</span></h1>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Your Numbar" id="phone" class="form-control" name="phone" required data-error="Please enter your Numbar">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="submit-button text-center">
+										<button class="btn btn-common" id="submit" type="submit">Book Table</button>
+										<div id="msgSubmit" class="h3 text-center hidden"></div> 
+										<div class="clearfix"></div></p> 
+									</div>
+								</div>
+							</div>            
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!------------------------------------------------Book Rooms------------------------------------------------------------------------------------------>
+	
+	<div class="reservation-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Reservation Rooms</h2>
+						<p>Come & Enjoy</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-6">
+								 <h1> <span>Book Rooms</span></h1>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="Date" name="Date" placeholder="Date" required data-error="Please enter your Date">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="How many Days" id="How many Days" class="form-control" name="How many days" required data-error="Please enter your Days">
+											<p>Enter a number and click OK:</p>
+
+<input id="id1" type="number" min="1" max=7" required>
+<button onclick="myFunction()">OK</button>
+</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var inpObj = document.getElementById("id1");
+  if (!inpObj.checkValidity()) {
+    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+  } else {
+    document.getElementById("demo").innerHTML = "Input OK";
+  } 
+} 
+</script>
+
+											<div class="help-block with-errors"></div>
+										</div>          
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<select class="custom-select d-block form-control" id="person" required data-error="Please select Person">
+											  <option disabled selected>Select Person*</option>
+											  <option value="1">1</option>
+											  <option value="2">2</option>
+											  <option value="3">3</option>
+											  <option value="4">4</option>
+											  <option value="5">5</option>
+											  <option value="6">6</option>
+											  <option value="7">7</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div> 
+							         </div>
+									 <div class="col-md-12">
+										<div class="form-group">
+											<select class="custom-select d-block form-control" id="person" required data-error="Please select Person">
+											  <option disabled selected>Select Room Type*</option>
+											  <option value="1">Ac</option>
+											  <option value="2">Non-Ac</option>
+											  </select>
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="How many rooms" id="How many rooms" class="form-control" name="How many rooms" required data-error="Please enter your rooms">
+											<div class="help-block with-errors"></div>
+										</div>          
+									</div>
+								</div>
+								<div class="col-md-6">
+								<h1> <span>Contact Details</span></h1>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Your Numbar" id="phone" class="form-control" name="phone" required data-error="Please enter your Numbar">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="submit-button text-center">
+										<button class="btn btn-common" id="submit" type="submit">Book Rooms</button>
+										<div id="msgSubmit" class="h3 text-center hidden"></div> 
+										<div class="clearfix"></div></p> 
+									</div>
+								</div>
+							</div>            
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Reservation -->
+	
+	 <!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-3 col-md-6">
+					<h3>About Us</h3>
+					<p>We welcome you to the Animone Hotel and we will ensure that your experience with us is complete as a finest star class luxury hotel located in suburbs of Colombo.</p>
+				</div>
+				
+				<div class="col-lg-3 col-md-6">
+					<h3>Opening hours</h3>
+					<p><span class="text-color">Every Day</span></p>
+					<p><span class="text-color">*</span> 7:Am - 11PM</p>
+					
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Contact information</h3>
+					<p class="lead">No 12/A, Udagama, Bope, Padukka</p>
+					<p class="lead"><a href="#">+011 2759761</a></p>
+					<p class="lead"><a href="#">animonehotels72@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Subscribe</h3>
+					<div class="subscribe_form">
+						<form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+							<button type="submit" class="submit">SUBSCRIBE</button>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" ></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" ></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" ></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" ></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" ></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">All Rights Reserved. &copy; 2021 <a href="#">Animone Hotels & Group</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+ </body>
+ </html>
+ 
+	
